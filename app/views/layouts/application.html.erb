@@ -4,10 +4,15 @@
   <title>Foodtrucksf</title>
   <%= stylesheet_link_tag    "application", media: "all" %>
   <%= javascript_include_tag "application" %>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=API_KEY&sensor=true">
+    </script>
   <%= csrf_meta_tags %>
+   <%= javascript_include_tag "init" %>
 </head>
 <body>
-
+<div id="map-canvas"/>
 <%= yield %>
 
 </body>
